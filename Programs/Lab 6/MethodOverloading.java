@@ -12,7 +12,7 @@ class Dog extends Animal {
 
 public class MethodOverloading {
   public static void main(String[] args) {
-    Dog dog = new Dog();
-    dog.sound();
+    Animal obj = new Dog();
+    obj.sound();
   }
 }

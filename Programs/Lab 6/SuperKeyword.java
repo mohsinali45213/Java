@@ -1,5 +1,8 @@
 class Parent {
   int x = 10;
+  Parent() {
+    System.out.println("Parent class constructor called");
+  }
   void display() {
     System.out.println("Parent class display method");
   }
@@ -8,6 +11,10 @@ class Parent {
 class Child extends Parent {
   int x = 20;
 
+  Child() {
+    super();
+    System.out.println("Child class constructor called");
+  }
   void display() {
     System.out.println("Child class display method");
   }
